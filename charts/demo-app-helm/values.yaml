@@ -8,7 +8,11 @@ image:
   repository: murtuzakteqbit/sample-demo-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
+<<<<<<< HEAD
   tag: "v1"
+=======
+  tag: "sjdfnsfnsdksdafsdfskj"
+>>>>>>> main
 
 imagePullSecrets: []
 nameOverride: ""
@@ -24,6 +28,20 @@ serviceAccount:
   name: ""
 
 podAnnotations: {}
+
+livenessProbe:
+  httpGet:
+    path: /
+    port: 8000
+    scheme: HTTP
+  initialDelaySeconds: 20
+
+readinessProbe:
+  httpGet:
+    path: /
+    port: 8000
+    scheme: HTTP
+  initialDelaySeconds: 20
 
 podSecurityContext: {}
   # fsGroup: 2000
