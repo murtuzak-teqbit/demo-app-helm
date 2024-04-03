@@ -3,6 +3,16 @@ entries:
   demo-app:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-04-03T05:10:41.460949965Z"
+    description: A Helm chart for Kubernetes
+    digest: 5cebb41d4d7f93bd4541f27786f43d956e12b7e29352aad78aaf5c204d344c06
+    name: demo-app
+    type: application
+    urls:
+    - https://github.com/murtuzak-teqbit/demo-app-helm/releases/download/demo-app-0.2.8/demo-app-0.2.8.tgz
+    version: 0.2.8
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-04-03T04:42:31.481173693Z"
     description: A Helm chart for Kubernetes
     digest: c39268dac828346985aec0826dd2f2124b2aebcab3f4c8f7a4b785d96b36a425
@@ -21,4 +31,4 @@ entries:
     urls:
     - https://github.com/murtuzak-teqbit/demo-app-helm/releases/download/demo-app-0.2.6/demo-app-0.2.6.tgz
     version: 0.2.6
-generated: "2024-04-03T04:42:31.481186036Z"
+generated: "2024-04-03T05:10:41.46096325Z"
