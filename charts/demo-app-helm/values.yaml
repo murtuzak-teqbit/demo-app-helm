@@ -28,14 +28,14 @@ podAnnotations: {}
 livenessProbe:
   httpGet:
     path: /
-    port: 8000
+    port: 8080
     scheme: HTTP
   initialDelaySeconds: 20
 
 readinessProbe:
   httpGet:
     path: /
-    port: 8000
+    port: 8080
     scheme: HTTP
   initialDelaySeconds: 20
 
