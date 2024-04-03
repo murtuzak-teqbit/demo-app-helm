@@ -25,6 +25,17 @@ serviceAccount:
 
 podAnnotations: {}
 
+livenessProbe:
+  httpGet:
+    path: /
+    port: 8000
+  initialDelaySeconds: 20
+readinessProbe:
+  httpGet:
+    path: /
+    port: 8000
+  initialDelaySeconds: 20
+
 podSecurityContext: {}
   # fsGroup: 2000
 
