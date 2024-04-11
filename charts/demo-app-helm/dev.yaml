@@ -7,7 +7,7 @@ image:
   repository: murtuzakteqbit/sample-demo-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "7738ee3cd18e2b2c66a34b81014240504e5fdb54"
+  tag: "dev-dcab5e281fc65940d40c2e707845ae8ab9c04ae0"
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
@@ -46,7 +46,6 @@ securityContext: {}
 service:
   type: ClusterIP
   port: 80
-
 ingress:
   enabled: true
   annotations: {}
@@ -59,7 +58,6 @@ ingress:
           backend:
             serviceName: demo-app-git
             servicePort: 80
-
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
