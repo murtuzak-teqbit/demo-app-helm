@@ -2,12 +2,12 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-replicaCount: 2
+replicaCount: 1
 image:
   repository: murtuzakteqbit/sample-demo-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "7738ee3cd18e2b2c66a34b81014240504e5fdb54"
+  tag: "dev-3149d4040267480d1e61a30b8068b8cead1790b5"
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
@@ -47,16 +47,16 @@ service:
   type: ClusterIP
   port: 80
 ingress:
-  enabled: false
-  annotations: {}
-  # kubernetes.io/ingress.class: nginx
+  enabled: true
+  annotations: 
+    kubernetes.io/ingress.class: ingress-nginx
   # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: chart-example.local
+    - host: devapprafay.ddns.net
       paths:
         - path: /
           backend:
-            serviceName: chart-example.local
+            serviceName: demo-app-git
             servicePort: 80
   tls: []
   #  - secretName: chart-example-tls
