@@ -46,6 +46,7 @@ securityContext: {}
 service:
   type: ClusterIP
   port: 80
+
 ingress:
   enabled: false
   annotations: {}
@@ -58,6 +59,7 @@ ingress:
           backend:
             serviceName: chart-example.local
             servicePort: 80
+
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
