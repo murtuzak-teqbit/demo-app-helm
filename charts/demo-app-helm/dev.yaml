@@ -7,7 +7,7 @@ image:
   repository: murtuzakteqbit/sample-demo-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "dev-3149d4040267480d1e61a30b8068b8cead1790b5"
+  tag: "dev-3cba2403811a1ac0928eedf9bc940aa7b076ef3d"
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
@@ -48,7 +48,7 @@ service:
   port: 80
 ingress:
   enabled: true
-  annotations: 
+  annotations:
     kubernetes.io/ingress.class: ingress-nginx
   # kubernetes.io/tls-acme: "true"
   hosts:
