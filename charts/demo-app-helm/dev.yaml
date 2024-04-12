@@ -55,6 +55,7 @@ ingress:
     - host: devapprafay.ddns.net
       paths:
         - path: /
+          pathType: Prefix
           backend:
             serviceName: demo-app-git
             servicePort: 80
