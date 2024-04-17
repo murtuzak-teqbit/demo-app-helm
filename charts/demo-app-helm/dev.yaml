@@ -7,7 +7,7 @@ image:
   repository: murtuzakteqbit/sample-demo-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "dev-4291c5df8f0cd51b7798b9be8c142f3643f670e6"
+  tag: "dev-e2b3f3b0bc9308a0f82e857c1b9968c03b5c41cf"
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
@@ -46,11 +46,10 @@ securityContext: {}
 service:
   type: ClusterIP
   port: 80
-
 ingress:
   enabled: true
   annotations:
-    #kubernetes.io/ingress.class: ingress-nginx
+  #kubernetes.io/ingress.class: ingress-nginx
   # kubernetes.io/tls-acme: "true"
   hosts:
     - host: devapprafay.ddns.net
