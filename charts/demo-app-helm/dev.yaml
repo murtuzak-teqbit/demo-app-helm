@@ -52,7 +52,7 @@ ingress:
   #kubernetes.io/ingress.class: ingress-nginx
   # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: devapp.teqbitdemo.store
+    - host: devapp.teqbitdemo.site
       paths:
         - path: /
           pathType: Prefix
