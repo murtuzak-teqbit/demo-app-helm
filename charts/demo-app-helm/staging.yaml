@@ -52,12 +52,12 @@ ingress:
   #kubernetes.io/ingress.class: ingress-nginx
   # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: devapprafay.ddns.net
+    - host: staginapp.teqbitdemo.site
       paths:
         - path: /
           pathType: Prefix
           backend:
-            serviceName: demo-app-git
+            serviceName: demo-app-staging
             servicePort: 80
   tls: []
   #  - secretName: chart-example-tls
