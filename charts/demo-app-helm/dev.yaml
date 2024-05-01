@@ -7,7 +7,7 @@ image:
   repository: murtuzakteqbit/sample-demo-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "dev-712f52350e4a6fcea1c6ee267fab074d6bd73ea7"
+  tag: "dev-d4a5caeb413776f9689e28e2aadbf471e084a167"
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
